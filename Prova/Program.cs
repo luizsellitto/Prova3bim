@@ -135,6 +135,7 @@ class Program
                                     Console.WriteLine("A especialidade deve estar preenchida");
                                     goto especialidade;
                                 }
+                                salario += (salario * 0.20);
 
 
                                 Medico m = new Medico(cRM, vHE, especialidade, nome, cPF, matricula, dataN, sexo, salario);
@@ -185,6 +186,8 @@ class Program
                                     Console.WriteLine("Salário inválido, preencha novamente");
                                     goto salario3;
                                 }
+                                salario += (salario * 0.15);
+                                salario += 150;
 
                                 Administrativo a = new Administrativo(nome, cPF, matricula, dataN, sexo, salario);
                                 administrativo.Add(a);
